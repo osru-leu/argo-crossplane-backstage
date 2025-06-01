@@ -1,6 +1,6 @@
 # GitOps Crossplane Demo
 
-This demo shows how to use Crossplane to provision GitHub repositories through a GitOps workflow with ArgoCD. Instead of manually creating GitHub repositories, we'll define them as YAML and let Crossplane create them automatically through a GitOps process.
+This demo shows how to use Crossplane to provision GitHub repositories through a GitOps workflow with ArgoCD. Instead of manually creating GitHub repositories, we'll define them as YAML and let Crossplane create them automatically through a GitOps process. ArgoCD continuously monitors the state of your resources by comparing what's in Git (desired state) against what's in the cluster (actual state). If it detects any drift—meaning the cluster state doesn't match the Git state—it automatically reconciles the differences to ensure your infrastructure stays in sync with your Git repository. This automated drift detection makes the system self-healing and ensures your GitHub repositories are always provisioned exactly as defined in your YAML files.
 
 ## Architecture Overview
 
