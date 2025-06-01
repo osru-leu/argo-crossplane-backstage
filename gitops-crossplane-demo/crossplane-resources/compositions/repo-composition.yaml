@@ -18,6 +18,10 @@ spec:
           forProvider:
             visibility: public
             autoInit: true
+            template:
+              owner: osru-leu
+              repository: argo-crossplane-backstage
+              includeAllBranches: false
           providerConfigRef:
             name: github-provider-config
       patches:
