@@ -1,0 +1,9 @@
+apiVersion: github.example.org/v1alpha1
+kind: RepoClaim
+metadata:
+  name: demo-repo-three
+specs:
+  name: gitops-crossplane-demo-three
+  description: "A demo repo created via GitOps claim with crossplane"
+  private: true
+  autoInit: true
