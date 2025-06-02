@@ -5,5 +5,5 @@ metadata:
 specs:
   name: gitops-crossplane-demo-three
   description: "A demo repo created via GitOps claim with crossplane"
-  private: true
+  private: false
   autoInit: true
