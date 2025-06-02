@@ -170,7 +170,7 @@ These steps need to be performed manually before ArgoCD can manage the Crossplan
 1. Install the GitHub provider:
 ```bash
 cd gitops-crossplane-demo  # if not already in the directory
-kubectl apply -f crossplane-resources/provider.yaml
+kubectl apply -f crossplane-resources/providers/provider.yaml
 ```
 
 2. Wait for the provider to be healthy:
@@ -180,7 +180,7 @@ kubectl wait --for=condition=healthy provider.pkg.crossplane.io/provider-github 
 
 3. Apply the provider configuration (which uses the GitHub token):
 ```bash
-kubectl apply -f crossplane-resources/provider-config.yaml
+kubectl apply -f crossplane-resources/providers/provider-config.yaml
 ```
 
 Note: Only the provider setup files (`provider.yaml` and `provider-config.yaml`) need to be applied manually. Do NOT manually apply:

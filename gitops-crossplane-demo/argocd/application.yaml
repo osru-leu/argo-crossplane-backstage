@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/osru-leu/dep-demo.git
+    repoURL: https://github.com/osru-leu/argo-crossplane-backstage.git
     path: gitops-crossplane-demo/crossplane-resources
     targetRevision: main
   destination:
